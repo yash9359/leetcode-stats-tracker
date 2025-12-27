@@ -24,9 +24,12 @@ https://leetcode-stats-api.herokuapp.com/{username}
 Open `index.html` in browser and search a username.
 
 
-## Photos
+## Preview
 
 <img width="1919" height="905" alt="Screenshot 2025-12-27 170814" src="https://github.com/user-attachments/assets/2d7c2b50-8ce7-4f5a-b582-6002b3a65207" />
+
+<img width="1918" height="910" alt="Screenshot 2025-12-27 171002" src="https://github.com/user-attachments/assets/579af54d-411d-4c71-b2ba-ab2547593c05" />
+
 
 
 ## 👨‍💻 Author
