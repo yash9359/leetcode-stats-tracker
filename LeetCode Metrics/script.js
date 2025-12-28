@@ -16,8 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Username Should not be empty");
       return false;
     }
-    const regex = /^[a-z0-9][a-z0-9-]{1,13}[a-z0-9]$/;
-    const isMatching = regex.test(username);
+
+    const regex = /^[A-Za-z0-9][A-Za-z0-9_]{1,13}[A-Za-z0-9]$/;
+
+    const isMatching = regex.test(username.trim());
+
     if (!isMatching) {
       alert("Invalid Username");
     }
@@ -32,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function disPlayUserData(data) {
 
-    statsContainer.style.display ="block";
+    statsContainer.classList.add("show");
 
 
     const totalQues = data.totalQuestions;
@@ -111,7 +114,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   searchButton.addEventListener("click", function () {
-    const username = usernameInput.value;
+    const username = usernameInput.value.trim();
+
     if (validateUsername(username)) {
       fetchUserDetails(username);
     }
