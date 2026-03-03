@@ -23,7 +23,7 @@ A simple web app to fetch and display LeetCode user statistics using a public RE
 - REST API
 
 ## 🌐 API Used
-https://leetcode-stats-api.herokuapp.com/{username}
+https://alfa-leetcode-api.onrender.com
 
 ## ▶️ How to Run
 Open `index.html` in browser and search a username.
