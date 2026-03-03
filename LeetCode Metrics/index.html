@@ -7,59 +7,87 @@
     <title>LeetMetric</title>
 </head>
 <body>
-    
-    <div class="container">
-        <!-- heading
-        user
-        stats -->
 
-        <h1>LeetMetric</h1>
+    <canvas id="particle-canvas"></canvas>
+    <div class="grid-floor"></div>
 
-        <div class="user-container">
+    <div class="scene">
+        <div class="container" id="main-card">
 
-            <p>Enter your username below:</p>
-            <div class="user-input-container">
-                <input type="text" placeholder="enter your user name here" id  = "user-input">
-                <button id="search-btn">Search</button>
+            <h1 class="glitch" data-text="LeetMetric">LeetMetric</h1>
+
+            <div class="user-container anim-slide-up" style="--delay: 0.15s">
+                <p>Enter your username below:</p>
+                <div class="user-input-container">
+                    <input type="text" placeholder="enter your user name here" id="user-input" autocomplete="off">
+                    <button id="search-btn">
+                        <span class="btn-text">Search</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                </div>
             </div>
+
+            <div class="stats-container">
+
+                <div class="total-section anim-slide-up" style="--delay: 0.25s">
+                    <div class="total-progress circle" data-color="#38bdf8">
+                        <svg class="ring" viewBox="0 0 120 120">
+                            <circle class="ring-bg" cx="60" cy="60" r="52"/>
+                            <circle class="ring-fill" cx="60" cy="60" r="52"/>
+                        </svg>
+                        <div class="circle-inner">
+                            <span id="total-label">0/0</span>
+                            <p>Total</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress anim-slide-up" style="--delay: 0.35s">
+                    <div class="progress-item">
+                        <div class="easy-progress circle" data-color="#22c55e">
+                            <svg class="ring" viewBox="0 0 120 120">
+                                <circle class="ring-bg" cx="60" cy="60" r="52"/>
+                                <circle class="ring-fill" cx="60" cy="60" r="52"/>
+                            </svg>
+                            <div class="circle-inner">
+                                <span id="easy-label">0/0</span>
+                                <p>Easy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="medium-progress circle" data-color="#facc15">
+                            <svg class="ring" viewBox="0 0 120 120">
+                                <circle class="ring-bg" cx="60" cy="60" r="52"/>
+                                <circle class="ring-fill" cx="60" cy="60" r="52"/>
+                            </svg>
+                            <div class="circle-inner">
+                                <span id="medium-label">0/0</span>
+                                <p>Medium</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="hard-progress circle" data-color="#ef4444">
+                            <svg class="ring" viewBox="0 0 120 120">
+                                <circle class="ring-bg" cx="60" cy="60" r="52"/>
+                                <circle class="ring-fill" cx="60" cy="60" r="52"/>
+                            </svg>
+                            <div class="circle-inner">
+                                <span id="hard-label">0/0</span>
+                                <p>Hard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-card anim-slide-up" style="--delay: 0.45s"></div>
+            </div>
+
         </div>
-
-        <div class="stats-container" >
-            <div class="progress">
-                <div class="progress-item">
-                    <div class="easy-progress  circle">
-                        <span id="easy-label"></span>
-                        <p>Easy</p>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="medium-progress circle" >
-                        <span id="medium-label"></span>
-                        <p>Medium</p>
-                        
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="hard-progress circle">
-                        <span id="hard-label"></span>
-                        <p>Hard</p>
-                    </div>
-                </div>
-               
-            </div>
-
-            <div class="stats-card">
-                <!-- directly populate card here from js -->
-            </div>
-        </div>
-
-
-
     </div>
-
-
 
     <script src="script.js"></script>
 </body>
