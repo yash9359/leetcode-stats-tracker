@@ -12,7 +12,7 @@ A simple web app to fetch and display LeetCode user statistics using a public RE
 
 ## 🚀 Features
 - Search LeetCode user by username
-- Difficulty-wise problem stats (Easy / Medium / Hard)
+- Difficulty-wise problem stats (Total /Easy / Medium / Hard)
 - Circular progress visualization
 - Clean dark UI
 
@@ -30,10 +30,9 @@ Open `index.html` in browser and search a username.
 
 
 ## Preview
+<img width="1906" height="909" alt="Screenshot 2026-03-03 214029" src="https://github.com/user-attachments/assets/5b371eaf-250e-4d5f-85ea-cf06d6c67dfe" />
 
-<img width="1919" height="905" alt="Screenshot 2025-12-27 170814" src="https://github.com/user-attachments/assets/2d7c2b50-8ce7-4f5a-b582-6002b3a65207" />
-
-<img width="1918" height="910" alt="Screenshot 2025-12-27 171002" src="https://github.com/user-attachments/assets/579af54d-411d-4c71-b2ba-ab2547593c05" />
+<img width="1919" height="900" alt="Screenshot 2026-03-03 213948" src="https://github.com/user-attachments/assets/ae0cef23-7c5b-4488-b646-6eff3fbcfcee" />
 
 
 
